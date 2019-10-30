@@ -68,13 +68,13 @@ class Tile():
                 if ignore_times == 0:
                     is_ignore = -1
                 continue
-            elif idx + 3 > len(numbers):
+            if idx + 3 > len(numbers):
                 return False
             if i == numbers[idx + 2]:
                 is_ignore = True
                 ignore_times = 2
                 continue
-            elif i < 60:
+            if i < 60:
                 step = 1
                 lst = []
                 for a in numbers[idx + 1:]:
