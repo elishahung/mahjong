@@ -35,7 +35,7 @@ const Tile = {
             const i = numbers[idx];
             if (isIgnore && ignoreTimes != 0) {
                 ignoreTimes -= 1;
-                if (ignoreTimes === 0) isIgnore = -1;
+                if (ignoreTimes === 0) isIgnore = false;
                 continue;
             }
             if (idx + 3 > numbers.length) return false;

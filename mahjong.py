@@ -66,7 +66,7 @@ class Tile():
             if is_ignore and ignore_times != 0:
                 ignore_times -= 1
                 if ignore_times == 0:
-                    is_ignore = -1
+                    is_ignore = False
                 continue
             if idx + 3 > len(numbers):
                 return False

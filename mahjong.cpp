@@ -72,7 +72,7 @@ private:
             if (isIgnore && ignoreTimes != 0) {
                 ignoreTimes -= 1;
                 if (ignoreTimes == 0) {
-                    isIgnore = -1;
+                    isIgnore = false;
                 }
                 continue;
             }
