@@ -19,7 +19,7 @@ class Tile():
         return cls.nums[cls.strs.index(_type)] + order
 
     @classmethod
-    def makeAll(cls, duplicates=1):
+    def make_all(cls, duplicates=1):
         tiles = []
         while duplicates != 0:
             for n in cls.nums:
@@ -53,8 +53,7 @@ class Tile():
             if i == number and times != 0:
                 times -= 1
                 continue
-            else:
-                result.append(i)
+            result.append(i)
         return result
 
     @classmethod
@@ -108,7 +107,7 @@ class Tile():
     @classmethod
     def get_all(cls):
         if cls.all_tiles is None:
-            cls.all_tiles = cls.makeAll()
+            cls.all_tiles = cls.make_all()
         return cls.all_tiles
 
     @classmethod
@@ -142,7 +141,7 @@ class Tile():
 
 
 class Deck():
-    _tiles = Tile.makeAll(4)
+    _tiles = Tile.make_all(4)
 
     @classmethod
     def draw(cls, num):
